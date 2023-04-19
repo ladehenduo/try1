@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+          http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         metadata-complete="true">
+  <!--字符编码过滤器-->
+<!--  <filter>-->
+<!--    <filter-name>CharacterEncodingFilter</filter-name>-->
+<!--    <filter-class>com.wang.filter.CharacterEncodingFilter</filter-class>-->
+<!--  </filter>-->
+<!--  <filter-mapping>-->
+<!--    <filter-name>CharacterEncodingFilter</filter-name>-->
+<!--    <url-pattern>/*</url-pattern>-->
+<!--  </filter-mapping>-->
+
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.wang.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+
+<!--  退出登录-->
+  <servlet>
+    <servlet-name>LogOutServlet</servlet-name>
+    <servlet-class>com.wang.servlet.LogOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogOutServlet</servlet-name>
+    <url-pattern>/logout.do</url-pattern>
+  </servlet-mapping>
+<!--  注册请求，向数据库传递数据-->
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>com.wang.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/register.do</url-pattern>
+  </servlet-mapping>
+<!--  获取个人信息-->
+  <servlet>
+    <servlet-name>SelfProfileServlet</servlet-name>
+    <servlet-class>com.wang.servlet.SelfProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelfProfileServlet</servlet-name>
+    <url-pattern>/getSelfProfile.do</url-pattern>
+  </servlet-mapping>
+
+<!--  bootstraptable请求 获取所有进出记录-->
+  <servlet>
+    <servlet-name>inoutRecordServelet</servlet-name>
+    <servlet-class>com.wang.servlet.AllinoutRecordServelet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>inoutRecordServelet</servlet-name>
+    <url-pattern>/inoutRecord.do</url-pattern>
+  </servlet-mapping>
+<!--  获取所有的隔离信息-->
+  <servlet>
+    <servlet-name>AllQuarantinePeopleServlet</servlet-name>
+    <servlet-class>com.wang.servlet.AllQuarantinePeopleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllQuarantinePeopleServlet</servlet-name>
+    <url-pattern>/getAllQuarantine.do</url-pattern>
+  </servlet-mapping>
+<!--  #####################################    User部分   #################################################-->
+<!--修改密码请求-->
+  <servlet>
+    <servlet-name>ModifyPassword</servlet-name>
+    <servlet-class>com.wang.servlet.ModifyPasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyPassword</servlet-name>
+    <url-pattern>/modifyPassword.do</url-pattern>
+  </servlet-mapping>
+
+  <!--  #####################################    Profile部分   #################################################-->
+  <!--修改个人信息请求-->
+  <servlet>
+    <servlet-name>ModifyProfileServlet</servlet-name>
+    <servlet-class>com.wang.servlet.ModifyProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyProfileServlet</servlet-name>
+    <url-pattern>/modifyProfile.do</url-pattern>
+  </servlet-mapping>
+  <!--  #####################################    InoutRecord部分   #################################################-->
+<!--增加进出信息-->
+  <servlet>
+    <servlet-name>AddInoutRecordServlet</servlet-name>
+    <servlet-class>com.wang.servlet.AddInoutRecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddInoutRecordServlet</servlet-name>
+    <url-pattern>/addInoutRecord.do</url-pattern>
+  </servlet-mapping>
+<!--  修改进出信息-->
+
+<!--  删除进出信息-->
+  <servlet>
+    <servlet-name>DeleteInoutRecordServlet</servlet-name>
+    <servlet-class>com.wang.servlet.DeleteInoutRecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteInoutRecordServlet</servlet-name>
+    <url-pattern>/deleteInoutRecord.do</url-pattern>
+  </servlet-mapping>
+  <!--  #####################################    Quarantine部分   #################################################-->
+<!--  增加隔离信息-->
+  <servlet>
+    <servlet-name>AddQuarantineServlet</servlet-name>
+    <servlet-class>com.wang.servlet.AddQuarantineServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddQuarantineServlet</servlet-name>
+    <url-pattern>/addQuarantine.do</url-pattern>
+  </servlet-mapping>
+<!--  修改隔离信息-->
+
+<!--  删除隔离信息-->
+  <servlet>
+    <servlet-name>DeleteQuarantineServlet</servlet-name>
+    <servlet-class>com.wang.servlet.DeleteQuarantineServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteQuarantineServlet</servlet-name>
+    <url-pattern>/deleteQuarantine.do</url-pattern>
+  </servlet-mapping>
+  <!--  #####################################    Room部分   #################################################-->
+<!--  增加隔离房间-->
+
+<!--  撤销隔离房间-->
+
+
+</web-app>

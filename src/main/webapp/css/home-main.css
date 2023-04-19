@@ -1,0 +1,608 @@
+body, button, input, select, textarea { color:#000; }
+a:link, a:visited { color: #000; -webkit-transition: color .4s ease-in-out;
+-moz-transition: color .4s ease-in-out;
+-o-transition: color .4s ease-in-out;
+-ms-transition: color .4s ease-in-out;
+transition: color .4s ease-in-out
+}
+body { min-width:1080px }
+a:hover, a:active { color: #c00 }
+a.noease { -webkit-transition: color 0s ease-in-out; -moz-transition: color 0s ease-in-out; -o-transition: color 0s ease-in-out; -ms-transition: color 0s ease-in-out; transition: color 0s ease-in-out }
+.container { width:1080px; margin:0 auto }
+.section { margin-top:35px }
+.btn-style { position:relative; z-index:3 }
+.btn-style::after {
+background:#c33;
+content:" ";
+width: 100%;
+height: 0;
+line-height:0;
+font-size:0;
+overflow:hidden;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+transition: all .3s
+}
+.pic-style { position:relative }
+.pic-style .cover, .pic-style img { -webkit-transition: all 0.8s; transition: all 0.8s; }
+.pic-style .cover { width:100%; height:100%; background:#fff; overflow:hidden; position:absolute; left:0; top:0; -webkit-transform: scale(1.12); transform: scale(1.12); }
+.pic-style:hover .cover { -webkit-transform: scale(1); transform: scale(1) }
+.pic-style .cover b { width:100%; height:100%; position:absolute; background:#000 }
+.pic-style .cover .b1 { width:18px; left:0; top:0 }
+.pic-style .cover .b2 { height:18px; left:0; top:0 }
+.pic-style .cover .b3 { width:18px; right:0; top:0 }
+.pic-style .cover .b4 { height:18px; left:0; bottom:0 }
+.pic-style img { display:block; position:relative; }
+.pic-style a:hover img { opacity: 0.95; filter: alpha(opacity=90); -webkit-transform: scale(1.12); transform: scale(1.12); }
+.pic-style2 { position:relative; background:#555 }
+.pic-style2 .cover { width:90%; height:90%; display:none\9; border:1px solid #fff; position:absolute; left:5%; top:5%; opacity:0; -webkit-transform: scale(1.12); transform: scale(1.12); }
+.pic-style2 .info { width:100%; height:100%; position:absolute; left:0; top:0; color:#fff; text-shadow: 0px 1px 3px #555; }
+.pic-style2 .title, .pic-style2 .cover, .pic-style2 a:hover img { -webkit-transition: all 0.35s; transition: all 0.35s; }
+.pic-style2 .title { padding-top:38%; opacity:0; display:none\9; text-align:center; font-size:20px; height:30px; line-height:30px; overflow:hidden; }
+.pic-style2 img { -webkit-transform: scale(1.15); transform: scale(1.15); }
+.pic-style2 a:hover .cover { opacity: .7; filter: alpha(opacity=70); display:block\9; -webkit-transform: scale(1); transform: scale(1); }
+.pic-style2 a:hover .title { opacity: 1; display:block\9; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); text-shadow: 0px 1px 3px #000; }
+.pic-style2 a:hover img { opacity: .7; filter: alpha(opacity=70); -webkit-transform: scale(1); transform: scale(1); }
+.pic-style2 a:hover { text-decoration:none; cursor:pointer }
+.title a:hover, .sort-name a:hover, .hd a:hover, .name a:hover, .sort-name a:hover, .market-item .pic a:hover, .method .metl .keyword .keyl .p1 a:hover, .food-therapy .btn:hover, .health-test .info .num-test .btn:hover, .method .metr .tool-item .food-heat .search-input .btn:hover ，.method .metr .tool-item .search-input .btn:hover , .sort-0 .desc a:hover { color:#666;text-decoration:none;}
+.m-ad { margin-top:35px }
+.top-ad { width:1080px; margin:0 auto; overflow:hidden }
+.m-hd { width:100%; border-top:1px solid #000; padding-top:12px }
+.m-hd .f { width:750px; float:left; position:relative }
+.m-hd .f .pic { float:right; width:620px; height:350px; overflow:hidden; position:relative }
+.m-hd .f ul { position:absolute; top:0; left:0; width:1250px }
+.m-hd .f li { float:left; width:620px; height:350px; overflow:hidden }
+.m-hd .f .info { width:190px; position:absolute; top:90px; height:140px; left:0; background:#fff; padding:20px 0 20px }
+.m-hd .f .name-c { position:absolute; top:-46px; width:100px; height:48px; font-size:48px; font-weight:bold; line-height:48px; color:#c00 }
+.m-hd .f .name-c:hover { text-decoration:none }
+.m-hd .f .name-e { width:160px; height:32px; display:block; background:url(../images/s8.png) no-repeat; margin-bottom:15px }
+.fashion .m-hd .f .name-e { background-position:-3px -3px; }
+.beauty .m-hd .f .name-e { background-position:-3px -36px; }
+.fitness .m-hd .f .name-e { background-position:-3px -69px; }
+.life .m-hd .f .name-e { background-position:-3px -102px; }
+.bbs .m-hd .f .name-e { background-position:-3px -135px; }
+.m-hd .f .title { font-weight: 600;font-size:24px; line-height:32px; color:#222; height:96px; overflow:hidden; width:170px; position:absolute; left:0; top:70px }
+.m-hd .f .title a:hover { text-decoration:none }
+.m-hd .f .title:hover, .m-hd .f:hover .title { color:#c00; text-decoration:none; }
+.m-hd .s { width:300px; float:right; position:relative }
+.m-hd .s .panle { width:300px; height:350px; overflow:hidden; position:relative }
+.m-hd .s ul { position:absolute; left:0; top:0; width:10000px }
+.m-hd .s li { float:left; width:300px; height:350px; overflow:hidden }
+.m-hd .s .trigger, .m-hd .s .trigger-c { width:100%; height:16px; display:inline-block; text-align:center; font-size:0; position:absolute; bottom:0; left:0 }
+.m-hd .s .trigger-c { background:#fff; opacity: 0.7; filter: alpha(opacity=70); }
+.m-hd .s .trigger span { width:37px; height:16px; display:inline-block; margin:0 3px; cursor:pointer }
+.m-hd .s .name { width:50px; height:60px; overflow:hidden; padding-top:10px; color:#fff; text-align:center; font-size:18px; line-height:24px; position:absolute; left:15px; top:-12px; background:#000 }
+.m-hd .s .name a { color:#fff; }
+.m-hd .s .name a:hover { color:#fff; text-decoration:none; }
+.m-hd .s:hover .name::after {
+height:100%
+}
+.m-hd .tag { font-size:0; clear:both; padding-top:20px; height:18px; line-height:18px; overflow:hidden }
+.m-hd .tag a { font-size:12px; color:#666; margin-right:20px }
+.m-hd .tag a:hover { color:#c00 }
+.m-hd .f span { height:16px; width:37px; position:absolute; top:173px; left:0; overflow:hidden; cursor:pointer }
+.m-hd .f span i, .m-hd .s .trigger span i { width:37px; height:2px; line-height:0; overflow:hidden; background:#000; font-size:0; display:block; margin-top:7px }
+.m-hd .f span.two { left:53px }
+.m-hd .f span.active i, .m-hd .s .trigger .active i { background:#c00 }
+/*焦点图*/
+.focus-wrap { width:100%; overflow:hidden; position:relative; border-top:1px solid #7a7a7a; padding-top:4px; margin-top:2px}
+.focus { position:relative; width:1080px; height:498px; margin:0 auto }
+.focus .focus-container { width:10000px; height:480px; position:absolute; top:0; left:0 }
+.focus li { float:left; width:1080px; height:480px; overflow:hidden; display:inline; position:relative }
+.focus .info { width:100%; position:absolute; overflow:hidden; top:394px; text-shadow:0px 1px 3px #000; height:86px; left:0; display:none }
+.focus .title { font-size:30px; padding-left:35px; padding-top:12px }
+.focus .title a { color:#fff }
+.focus .title a:hover { text-decoration:none }
+.focus .desc { font-size:12px; color:#fff; padding-left:35px }
+.focus .cover { height:86px; width:100%; background:#000; position:absolute; top:394px; opacity: 0.5; filter: alpha(opacity=50); left:0; display:none}
+.focus .next, .focus .prev, .focus .pn-line { position:absolute; height:51px; width:27px; text-align:center; line-height:46px; text-indent:-999em; overflow:hidden; top:413px; z-index:100; background-image:url(f.png); background-repeat:no-repeat; -webkit-transition: padding 0.25s linear; -moz-transition: padding 0.25s linear; -ms-transition: padding 0.25s linear; -o-transition: padding 0.25s linear; transition: padding 0.25s linear; }
+.focus .prev { right:80px; background-position:0 -52px }
+.focus .prev:hover { background-position:0 0; padding-right:5px }
+.focus .next { left:1042px; background-position:right -156px }
+.focus .next:hover { background-position:right -104px; padding-left:5px }
+.focus .pn-line { width:31px; height:68px; background:url(s24.png) no-repeat -474px -216px; right:44px; top:405px }
+.focus .trigger { position:absolute; left:0; top:480px; z-index:10; width:1100px; height:18px }
+.focus .trigger span { float:left; margin-right:11px; width:125px; cursor:pointer; height:18px; line-height:0; font-size:0; position:relative; overflow:hidden; text-indent:-9999px; overflow:hidden }
+.focus .trigger .last{ margin-right:12px}
+.focus .trigger i { height:2px; width:100%; overflow:hidden; background:#000; margin-top:8px; line-height:0; display:block; font-size:0 }
+.trigger-cover { width:125px; height:4px; line-height:0; font-size:0; background:#c33; position:absolute; left:0; top:487px; z-index:11 }
+.seven .trigger { padding-left:68px }
+.seven .trigger .last { display:none }
+.seven .trigger-cover { left:68px }
+.focus .focus-container .eight .info , .focus .focus-container .eight .cover{ display:none;}
+.lbox, .rbox{height:480px; width:1080px; position:absolute; top:0}
+.lbox{ left:-1080px}
+.rbox{ right:-1080px}
+.focus-wrap .mask{ background:#000; opacity: 0.4; filter: alpha(opacity=40); z-index:999; cursor:pointer }
+.focus .active .info, .focus .active .cover{ display:block}
+/*sort-0*/
+.sort-0 { position:relative; margin-top:15px }
+
+.sort-0 .hd { position:absolute; top:20px; left:10px }
+.sort-0 .hd .hot { width:261px; height:51px; background:url(../images/s8.png) no-repeat -1px -272px; }
+.sort-0 .hd .date { height:28px; padding-top:15px }
+.sort-0 .hd span { float:left; display:inline; font-size:0 }
+.sort-0 .hd .day i { width:15px; height:25px; display:inline-block; margin-right:3px; background-image:url(../images/s8.png); background-repeat:no-repeat }
+.sort-0 .hd .day .num0 { background-position: -327px -225px }
+.sort-0 .hd .day .num1 { background-position: -327px -251px }
+.sort-0 .hd .day .num2 { background-position: -327px -277px }
+.sort-0 .hd .day .num3 { background-position: -327px -303px }
+.sort-0 .hd .day .num4 { background-position: -372px -225px }
+.sort-0 .hd .day .num5 { background-position: -372px -251px; }
+.sort-0 .hd .day .num6 { background-position: -372px -277px }
+.sort-0 .hd .day .num7 { background-position:-372px -303px }
+.sort-0 .hd .day .num8 { background-position:-411px -225px }
+.sort-0 .hd .day .num9 { background-position:-411px -251px }
+.sort-0 .hd .month { width:169px; height:28px; background-repeat:no-repeat; background-position:0 center }
+.sort-0 .hd .month1 { background:url(../images/m-1.png) }
+.sort-0 .hd .month2 { background-image:url(../images/m-2.png) }
+.sort-0 .hd .month3 { background-image:url(../images/m-3.png) }
+.sort-0 .hd .month4 { background-image:url(../images/m-4.png) }
+.sort-0 .hd .month5 { background-image:url(../images/m-5.png) }
+.sort-0 .hd .month6 { background-image:url(../images/m-6.png) }
+.sort-0 .hd .month7 { background-image:url(../images/m-7.png) }
+.sort-0 .hd .month8 { background-image:url(../images/m-8.png) }
+.sort-0 .hd .month9 { background-image:url(../images/m-9.png) }
+.sort-0 .hd .month10 { background-image:url(../images/m-10.png) }
+.sort-0 .hd .month11 { background-image:url(../images/m-11.png) }
+.sort-0 .hd .month12 { background-image:url(../images/m-12.png) }
+.sort-0 .hd .ico { width:106px; height:25px; background:url(../images/s8.png) no-repeat -323px -196px; margin-right:20px }
+.sort-0 .hd .line { width:12px; height:27px; background:url(../images/s8.png) no-repeat -482px -272px; margin-right:3px }
+.sort-0 .title {  font-weight:bold;height: 48px;overflow: hidden;font-size:20px; line-height:24px }
+.sort-0 .desc { font-size:12px; line-height:18px; margin-top:15px; height: 54px;
+overflow: hidden; text-indent: 2em;}
+.sort-0 .sort-name, .sort-0 .sort-name:visited { height:25px; line-height:24px; padding:0 10px; color:#fff; background:#c00; font-weight:700; position:absolute; top:0 }
+.sort-0 .fas { float:left; width:607px; position:relative; overflow:hidden }
+.sort-0 .fas .pic {float: right;margin-top: 30px;width: 220px;height: 280px;overflow: hidden;}
+.sort-0 .fas .info { float:left; width:370px; padding-top:145px }
+.sort-0 .fas .title { height: 36px;font-size:30px; line-height:36px; font-weight:700 }
+.sort-0 .fas .desc { text-indent:2em; width:350px }
+.sort-0 .fas .tag { width:355px; border-top:1px dotted #000; margin-top:35px; font-size:0; height:18px; line-height:18px; overflow:hidden; font-size:12px; padding-top:11px }
+.sort-0 .fas .tag a { margin-right:18px }
+.sort-0 .fas .sort-name, .sort-0 .fas .sort-name:visited { left:360px; top:60px }
+.sort-0 .star { float:right; width:440px; position:relative; padding-top:30px }
+.sort-0 .star .pic {float: right;width: 220px;height: 280px;overflow: hidden;}
+.sort-0 .star .info { position:absolute; top:57px; right:200px; background:#fff; width:190px; padding:25px;  }
+.sort-0 .star .title { padding-top:25px }
+.sort-0 .star .sort-name { right:0 }
+.sort-0 .ad { width:300px; height:500px; float:right; overflow:hidden; margin-top:32px }
+.sort-0 .three { position:relative; float:left; margin-top:30px; width:750px; height:500px; overflow:hidden }
+.sort-0 .three .panle { height:458px; position:relative }
+.sort-0 .three ul { display:none; opacity:0; position:absolute; left:0; top:0; height:100%; width:100% }
+.sort-0 .three .one { display:block; opacity:1 }
+.sort-0 .three .pic { position:absolute; width:220px; height:220px; overflow:hidden }
+.sort-0 .l1 .pic { top:0; left:0 }
+.sort-0 .l2 .pic { top:0; right:0 }
+.sort-0 .l3 .pic { top:240px; left:263px }
+.sort-0 .three .info { position:absolute; padding:25px; background:#fff }
+.sort-0 .l1 .info { top:21px; left:194px }
+.sort-0 .l2 .info { top:200px; left:540px; padding:25px 0; }
+.sort-0 .l3 .info { top:270px; left:0 }
+.sort-0 .l1 .sort-name, .sort-0 .l2 .sort-name { left:0 }
+.sort-0 .l3 .sort-name { right:0 }
+.sort-0 .three .title { padding-top:15px }
+.sort-0 .l1 .title { width:240px }
+.sort-0 .l2 .title { width:195px }
+.sort-0 .l3 .title { width:230px; }
+.sort-0 .l1 .desc { width:240px }
+.sort-0 .l2 .desc { width:190px }
+.sort-0 .l3 .desc { width:210px }
+.sort-0 .three .control { position:absolute; top:468px; left:0; width:100%; overflow:hidden; background:url(../images/ico-1.png) repeat-x 0 8px; height:32px }
+.sort-0 .three .control div { float:right; padding:0 15px 0 5px; background:#fff; width:148px }
+.sort-0 .three .control a { width:63px; height:32px; margin-left:11px; float:left; display:inline; cursor:pointer }
+.sort-0 .three .control a i { width:63px; height:32px; display:block }
+.sort-0 .three .prev i { background:url(../images/s8.png) no-repeat -462px -4px }
+.sort-0 .three .next i { background:url(../images/s8.png) no-repeat -462px -44px }
+.sort-0 .three .active .i1 { background:url(../images/s8.png) no-repeat -462px -80px; cursor:default }
+.sort-0 .three .active .i2 { background:url(../images/s8.png) no-repeat -462px -116px; cursor:default }
+.sort-0 .fas:hover .title a, .sort-0 .star:hover .title a, .sort-0 li:hover .title a { color:#c00 }
+/*精彩专题*/
+.wonderful { margin-top:35px; }
+.wonderful .focus2 { float:left; width:555px; height:620px; overflow:hidden; }
+.tabcom { width:500px; height:620px; overflow:hidden; float:left; position:relative; }
+.tabcontent { width:10000px; }
+.tabcontent li { width: 500px; height: 620px; float: left; margin-right: -100%; opacity:0; display:none }
+.tabcontent .one { opacity:1; display:block }
+.tabcontent li:first-child img { z-index: 2; position: relative; }
+.tabcontent li a { display: block; }
+.tabcontent li img { width: 100%; height: 620px; }
+.tabnav { width: 55px; float:left; }
+.tabnav ul li { display: block; width: 55px; height: 101px; background:#ccc; margin-bottom: 5px; text-align: center; cursor: pointer; position:relative; overflow:hidden; }
+.tabnav ul li i { position:absolute; right:-1px; bottom:-1px; width: 0; height: 0; overflow: hidden; z-index: 10; border-width: 22px 22px 0px 0; border-style: dashed solid dashed dashed; border-color: transparent #fff transparent transparent; }
+.tabnav ul li span { color: #000; font-size: 18px; width: 42px; padding-top: 23px; display: block; margin: auto; font-weight: 500; line-height: 24px; }
+.tabnav ul li.active { background:#000; z-index: 2; }
+.tabnav ul li.active span { font-weight: bold; color: #fff; }
+.tabnav ul li a { color: #000; font-size: 18px; width: 42px; padding-top: 23px; display: block; margin: auto; font-weight: 500; line-height: 24px; }
+.tabnav ul li.active a { font-weight: bold; color: #fff; }
+.tabcom .topics { position:absolute; width:240px; height:105px; bottom:34px; right:0px; z-index:3; background:url(../images/s8.png) no-repeat 0 -333px }
+.ku { float:right; width:492px; height:605px; overflow:hidden; background:url(../images/ku.jpg) no-repeat 0px 0px; padding:15px 0px 0px 10px; }
+.ku-com { position:relative; }
+.ku-com .ku-tit { position:absolute; width:100%; height:251px; overflow:hidden; left:0; top:0 }
+.ku-com .ku-tit .title { width:192px; height:66px; text-indent:15px; font-size:32px; line-height:66px; color:#fff; position:absolute; top:0; left:288px; cursor:pointer }
+.ku-com .ku-tit .title span { position:absolute; width:100%; height:100%; top:0; left:0; background:#cc3333 }
+.ku-com .ku-tit .title span i { width:21px; height:11px; position:absolute; overflow:hidden; top:28px; right:15px; background:url(../images/s8.png) no-repeat -535px -242px; -webkit-animation: start 1.5s infinite ease-in-out; -moz-animation: start 1.5s infinite ease-in-out; animation: start 1.5s infinite ease-in-out; }
+.ku-com .ku-tit .title span .i2 { background:url(../images/s8.png) no-repeat -535px -277px }
+.ku-com .ku-tit .title1, .ku-com .ku-tit .title2 { width:200px; height:140px; background:url(../images/s24.png) no-repeat -2px -180px; position:absolute; left:286px; top:-150px }
+.ku-com .ku-tit .title1 a, .ku-com .ku-tit .title2 a { width:200px; height:140px; display:block; }
+.ku-com .ku-tit .title2 { background:url(../images/s24.png) no-repeat -202px -166px; top:100px; display:block }
+.ku-com .ku-item .item { height:592px; position: absolute; left:0; top:0; width:100% }
+.ku-com .ku-item .item { opacity:0; display:none }
+.ku-com .ku-item .one { opacity:1; display:block }
+.ku-com .ku-item .s1, .ku-com .ku-item .s2, .ku-com .ku-item .s3, .ku-com .ku-item .s4, .ku-com .ku-item .s5 { position:absolute; overflow:hidden; z-index:9 }
+.ku-com .ku-item .s1 { left:0px; top:0px; width:250px; height:250px; }
+.ku-com .ku-item .s2 { left:0px; top:260px; width:200px; height:200px; }
+.ku-com .ku-item .s3 { left:210px; top:260px; width:270px; height:140px }
+.ku-com .ku-item .s4 { left:0px; top:470px; width:200px; height:122px; }
+.ku-com .ku-item .s5 { left:210px; top:408px; width:270px; height:184px; }
+
+.ku-com .ku-item .title{ font-size:18px; padding:0 5px}
+.ku-com .ku-item .s1 .title{ padding-top:110px}
+.ku-com .ku-item .s2 .title{ padding-top:85px}
+.ku-com .ku-item .s3 .title{ padding-top:55px}
+.ku-com .ku-item .s4 .title{ padding-top:46px}
+.ku-com .ku-item .s5 .title{ padding-top:77px}
+
+
+.ku-com .jiao { position: absolute; top:105px; left:230px; width: 0; height: 0; overflow: hidden; z-index: 10; border-width: 20px 20px 20px 0; border-style: dashed solid dashed dashed; border-color: transparent #030303 transparent transparent; }
+.sort { margin-top:15px; -webkit-box-shadow: 0 0 5px #e0e0e0; -moz-box-shadow: 0 0 5px #e0e0e0; box-shadow:  0 0 5px #e0e0e0; padding:15px 0 32px; *border:1px solid #efefef;
+border:1px solid #efefef\0 }
+:root .sort { border:0\9; }
+.sort li { width:220px; float:left; margin-left:30px; display:inline; padding-right:17px; position:relative }
+.sort li:hover a { color:#c00 }
+.sort .active { z-index:2 }
+.sort .sort-name, .coll-item .sort-name { font-size:24px; position:relative; height:36px; line-height:36px; padding-bottom:12px; font-weight:bold; }
+.sort .sort-name .more, .coll-item .sort-name .more { width:16px; height:16px; overflow:hidden; background:url(../images/s8.png) no-repeat -479px -198px; position:absolute; left:204px; top:10px }
+.sort .sort-name .more:hover, .coll-item .sort-name .more:hover { background:url(../images/s8.png) no-repeat -479px -228px; }
+.coll-item .sort-name .more { left:284px }
+.sort .pic { width:220px; height:350px; overflow:hidden }
+.sort .tip { width:15px; height:15px; position:absolute; overflow:hidden; cursor:pointer; display:none }
+.sort .tip i { width:15px; height:15px; background:url(../images/s24.png) no-repeat -432px -249px; position:absolute; left:0; top:0 }
+.sort .tip span { position:absolute; left:8px; top:0; padding-right:6px; display:none; height:15px; overflow:hidden; background:#000; color:#fff; font-size:12px; line-height:14px; _line-height:15px; text-indent:8px; font-family:"SimSun", "\5B8B\4F53" }
+.sort .title { width:160px; height:60px; padding:14px 20px 0; overflow:hidden; background:#fff; position:absolute; left:10px; top:350px }
+.sort .title a { line-height:22px; height: 44px; display: block; overflow: hidden; word-break: break-all; }
+.sort-2 { padding-bottom:22px }
+.sort-2 li { width:300px; padding-right:29px; }
+.sort-2 .sort-name .more { left:284px }
+.sort-2 .pic { width:300px; height:250px }
+.sort-2 .title { width:100%; text-align:center; position:static; left:0; top:0; padding:9px 0 0; height:auto }
+.sort-3 { background:#f2f2f2; margin-top:30px }
+.sort-3 li { width:180px; float:left; padding-bottom:25px }
+.sort-3 .pic { width:180px; height:180px; overflow:hidden }
+.sort-3 .sort-name { height:21px; line-height:22px; margin-top:8px }
+.sort-3 .sort-name a { color:#fff; padding:0 10px; display:inline-block; overflow:hidden; background:#000; font-size:12px }
+.sort-3 li:hover .sort-name a { background:#c33\9 }
+.sort-3 li:hover .sort-name a::after {
+height:100%
+}
+.sort-3 .title { line-height:18px; height:36px; overflow:hidden; margin-top:9px; width:150px }
+.sort-3 li:hover .title a { color:#c00 }
+.sort-3 .first .sort-name { padding-left:9px }
+.sort-3 .first .title { padding-left:10px }
+.sort-4 { width:750px; float:left; padding-bottom:55px; margin-top:30px }
+.sort-4 li { padding-right:0; margin-left:23px }
+.sort-4 .title { top:375px }
+.bbs-tab li i, .news-rank li i { width:18px; height:23px; background:url(../images/s8.png) no-repeat; position:absolute; top:17px; left:5px }
+.news-rank li i { top:14px }
+ul .l1 i { background-position: -536px -5px }
+ul .l2 i { background-position:-536px -29px }
+ul .l3 i { background-position:-536px -53px }
+ul .l4 i { background-position:-536px -77px }
+ul .l5 i { background-position:-536px -101px }
+.bbs-tab { width:300px; float:right; margin-top:35px }
+.m-trigger { font-size:0; padding-bottom:10px }
+.m-trigger span { display:inline-block; height:36px; line-height:36px; padding:0 12px; font-size:24px; cursor:pointer; font-weight:700 }
+.m-trigger .active { background:#000; color:#fff }
+.bbs-tab .panle .item { display:none }
+.bbs-tab .panle .active { display:block }
+.bbs-tab li { border-bottom:1px dotted #000; padding:11px 0 11px 32px; position:relative; width:268px; overflow:hidden }
+.bbs-tab .title { font-size:16px; height:24px; line-height:24px; overflow:hidden;display: block; }
+.bbs-tab .info { padding-top:1px }
+.bbs-tab .name { float:left; font-size:12px }
+.bbs-tab .num { float:right; color:#c00; font-size:12px; padding-right:20px }
+.magazine { width:300px; float:right; overflow:hidden; background:#333; padding:12px 0 9px; margin-top:26px; position:relative }
+.magazine .hd { height:46px; background:url(../images/s8.png) no-repeat -260px -367px }
+.magazine .pic { width:280px; height:315px; margin:12px auto 0; overflow:hidden }
+.magazine .title { width: 206px;font-size:22px; margin-top:6px; padding-left:15px; height:30px; line-height:30px; overflow:hidden }
+.magazine .title a, .magazine .title a:hover { color:#fff }
+.magazine .desc { font-size:12px; line-height:18px; width:275px; height:36px; overflow:hidden; margin-top:6px; padding-left:16px; color:#fff ;text-indent: 2em;}
+.magazine .order { width:79px; height:79px; position:absolute; right:6px; top:339px; background:url(../images/s24.png) no-repeat -437px -11px }
+.magazine .order i { width: 21px; height: 21px; overflow: hidden; background: url(../images/s8.png) no-repeat -535px -242px; display:block; margin-left:30px; margin-top:55px; -webkit-animation: start 1.2s infinite ease-in-out; -moz-animation: start 1.2s infinite ease-in-out; animation: start 1.2s infinite ease-in-out; }
+@-webkit-keyframes start { 0%, 30% {
+opacity:0;
+-webkit-transform:translate(0, -8px);
+}
+60% {
+opacity:1;
+-webkit-transform:translate(0, 0);
+}
+100% {
+opacity:0;
+-webkit-transform:translate(0, 8px);
+}
+}
+@-moz-keyframes start { 0%, 30% {
+opacity:0;
+-moz-transform:translate(0, -8px);
+}
+60% {
+opacity:1;
+-moz-transform:translate(0, 0);
+}
+100% {
+opacity:0;
+-moz-transform:translate(0, 8px);
+}
+}
+@keyframes start { 0%, 30% {
+opacity:0;
+transform:translate(0, -8px);
+}
+60% {
+opacity:1;
+transform:translate(0, 0);
+}
+100% {
+opacity:0;
+transform:translate(0, 8px);
+}
+}
+.sort-fas .s1 { width:370px; padding-left:26px; float:left; margin-top:35px; position:relative }
+.sort-fas .s1 .pic { width:370px; height:480px; overflow:hidden }
+.sort-fas .s1 .tag { padding:0 11px; height:60px; background:#000; overflow:hidden; position:absolute; top:0; left:0; line-height:60px; font-size:24px; color:#fff; font-weight:700 }
+.sort-fas .s1 .tag:hover { text-decoration:none; }
+.sort-fas .s1 .info { width:352px; padding:10px 10px 0 34px; height:55px; background:#c00; position:absolute; left:0; top:420px }
+.sort-fas .s1 .title { font-size:18px; font-weight:700; color:#fff; height:24px; line-height:24px; overflow:hidden }
+.sort-fas .s1 .desc { font-size:12px; color:#fff; height:18px; line-height:18px; overflow:hidden; margin-top:4px }
+.sort-fas .s1 i { position:absolute; top:-26px; left:0; width: 0; height: 0; line-height: 0; font-size:0; overflow:hidden; border-bottom: 26px solid #9e0d0d; border-left: 26px solid #fff; }
+.sort-fas .s1:hover .tag::after {
+height:100%
+}
+.sort-fas .s2 { width:320px; float:left; display:inline; margin-left:20px; margin-top:30px }
+.sort-fas .s2 .hd, .sort-fas .s3 .hd { font-size:24px; padding-bottom:8px;font-weight:bold; }
+.sort-fas .s2 .pic { width:320px; height:200px; overflow:hidden }
+.sort-fas .s2 .title { height:24px; line-height:24px; overflow:hidden; margin-top:10px }
+.sort-fas .s2:hover a { color:#c00 }
+.sort-fas .s3 { margin-top:14px; float:right; overflow:hidden; width:660px }
+.sort-fas .s3 ul { width:700px }
+.sort-fas .s3 li { float:left; width:151px; height:151px; overflow:hidden; margin-right:16px; display:inline; position:relative }
+.sort-fas .s3 .pic { width:151px; height:151px; background:#fff; overflow:hidden; position:relative }
+.sort-fas .s3 img { width:150px; }
+.sort-fas .s3 .cover { width:100%; height:100%; position:absolute; top:0; left:0; background:url(../images/s24.png) no-repeat -115px -4px }
+.sort-fas .s3 .info { width:163px; position:absolute; top:4px; left:151px; overflow:hidden; height:144px; padding-left:12px; background:#f6f6f6 }
+.sort-fas .s3 .title { font-weight:bold;line-height:24px; font-size:16px; width:150px; overflow:hidden; height:48px; padding-top:25px; }
+.sort-fas .s3 .desc { font-size:12px; line-height:18px; height:36px; overflow:hidden; width:150px; padding-top:5px;text-indent: 2em; }
+.sort-fas .s3 .first { width:326px }
+.sort-fas .s3 .active .cover { background:url(../images/s24.png) no-repeat -274px -4px }
+.sort-fas .s3 li:hover a { color:#c00 }
+.news-rank { width:300px; float:right; margin-top:40px }
+.news-rank .hd { padding-bottom:10px }
+.news-rank .hd span { display: inline-block; height: 36px; line-height: 36px; padding: 0 12px; font-size: 24px; cursor: pointer; background:#000; color:#fff; font-weight:700 }
+.news-rank .hd span a:link, .news-rank .hd span a:visited  {color: #fff;}
+.news-rank .hd span a:hover{text-decoration: none;}
+.news-rank li { height:50px; line-height:50px; border-bottom:1px dotted #a2a2a2; width:240px; margin-left:12px; padding-left:30px; overflow:hidden; position:relative; font-size:16px }
+.team { width:760px; float:left; margin-top:35px; position:relative }
+.team .inslide { height:378px; overflow:hidden }
+.team .item { float:left; width:300px; height:180px; overflow:hidden; position:relative; margin-bottom:18px; margin-right:18px; display:inline }
+.team ul { position:absolute; top:0; left:0; width:1000px }
+.team li { width:300px; float:left; position:relative }
+.team .first { margin-left:120px }
+.team .second { text-align:right }
+.team .info { width:117px; ; height:124px; background:#fff; text-align:left; position:absolute; top:32px; left:163px; padding:0 10px }
+.team .second .info { left:0 }
+.team .title { font-size:16px; font-weight:700; line-height:20px; height:40px; overflow:hidden; padding-top:16px }
+.team .desc { font-size:12px; line-height:18px; height:36px; overflow:hidden; margin-top:8px;text-indent: 2em; }
+.team .hd { width:134px; height:180px; background:url(../images/s8.png) no-repeat -317px -3px; position:absolute; left:-16px; top:0 }
+.team .next { width:116px; height:180px; text-align:center; background:#eee; position:absolute; ; left:625px; top:198px }
+.team .next .more1 { position:absolute; padding-right:40px; font-size:16px; top:25px; left:6px; }
+.team .next .more1 i { position:absolute; right:0; top:1px; width:35px; height:21px; background:url(../images/s8.png) no-repeat -436px -315px }
+.team .next .change, .team .next .more2 { position:absolute; top:82px; left:18px; width:29px; height:26px; overflow:hidden; background:url(../images/bg_5.png) no-repeat 0 0; cursor:pointer; -webkit-transition: -webkit-transform 0.25s ease-in; -moz-transition: -moz-transform 0.25s ease-in; }
+.team .next .change:hover, .team .next .more2:hover { -webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg) }
+.team .next .more2 { left:70px; width:26px; background-position:-2px -70px }
+.team .next:hover { background:#c33 }
+.team .next:hover .more1 i { background-position:-476px -315px }
+.team .next:hover .more1 { color:#fff }
+.team .next:hover .change { background-position:0px -27px; }
+.team .next:hover .more2 { background-position:-2px -99px; }
+.team li:hover a { color:#c00 }
+/*产品排行*/
+.bea-pro { width:750px; float:left; margin-top:40px }
+.bea-pro .panle .item { display:none }
+.bea-pro .panle .active { display:block }
+.carousel-wrap { width:750px; overflow:hidden; margin:0 auto; position:relative; height:282px }
+.carousel { position :relative; margin :0 auto; width :750px; height :auto; border :none; overflow : visible; }
+.carousel .slides { margin :0; border :none; list-style :none; position :relative; overflow :visible; }
+.carousel .slides .slideItem { position :absolute; cursor :pointer; overflow : hidden; padding :0; margin :0; border :1px solid #000; }
+.carousel .slides .slideItem a { display: block; text-decoration :none; margin :0; padding :0; border :none; outline :none; }
+.carousel .slides .slideItem img { margin :0; padding :0; border :none; width :100%; height :100%; }
+.bea-pro .nextButton, .bea-pro .prevButton { position: absolute; width: 42px; height: 50px; top: 115px; z-index:999; overflow: hidden; text-indent: -9999px; cursor: pointer }
+.bea-pro .prevButton { background: url(../images/s24.png) no-repeat -432px -108px; left: 0; }
+.bea-pro .nextButton { background: url(../images/s24.png) no-repeat -477px -108px; right: 0; }
+/*减肥方法库*/
+.method .metl .keyword .keyr .bt .search-button:hover , .method .metr .tool-item .search-input .btn:hover{ text-decoration:none;}
+
+.method { width:100%; float:left }
+.method .metl { width:750px; float:left; margin-top:50px; }
+.method .metl .keyword { border:1px solid #c1c1c1; padding:20px 0px 20px 35px; height:62px; margin-bottom:20px; }
+.method .metl .keyword .keyl { width:130px; padding-right:30px; border-right:1px solid #d8d8d8; float:left; margin-right:32px; }
+.method .metl .keyword .keyl .p1 { font-size:24px; font-weight:bold; }
+.method .metl .keyword .keyl .p2 { background:#000; width:120px; padding-right:10px; height:30px; line-height:30px; text-align:right; font-size:16px; font-family:Arial, Helvetica, sans-serif; color:#fff; }
+.method .metl .keyword .keyr { width:500px; float:left; }
+.method .metl .keyword .keyr .p1 { line-height:28px; height:28px; margin-bottom:6px; }
+.method .metl .keyword .keyr .p1 span { font-weight:bold; }
+.method .metl .keyword .keyr .p1 a { display:inline-block; margin-right:18px; }
+.method .metl .keyword .keyr .search { position: relative; width: 270px; height: 26px; line-height: 26px; border: 1px solid #959595; }
+.method .metl .keyword .keyr .select_box { border: 0; width:200px; float: left; background: #fff; position: relative; cursor: pointer; }
+.method .metl .keyword .keyr .select_box .select_txt { height: 20px; line-height: 20px; border-left: 1px solid #959595; width: 170px; margin-left: 29px; margin-top:3px; display:block; color: #000; cursor: text; overflow: hidden; text-indent:10px; }
+.method .metl .keyword .keyr .selet_open { display: inline-block; position: absolute; right: 0; top: 0; width: 26px; height: 26px; right: auto; left: 0 }
+.method .metl .keyword .keyr .selet_open b { position: absolute; overflow: hidden; width: 0; height: 0; top: 10px; left: 8px; overflow: hidden; border: 6px dashed transparent; border-top: 6px solid #676767 }
+.method .metl .keyword .keyr .option { width: 200px; background: #fff; overflow: hidden; border: solid 1px #aaa; clear: both; position: absolute; top: 26px; left: -1px; z-index: 2; display: none; }
+.method .metl .keyword .keyr .bt .search-button { width:70px; height: 26px; float: left; background-color: #333; text-align: center; line-height: 24px; color: #fff; display:inline-block; }
+.method .metl .keyword .keyr .option a { color: #000; display: block; margin: 0; height: 26px; line-height: 26px; text-align: left; text-indent:40px; background: #fff; overflow: hidden; }
+.method .metl .keyword .keyr .option a:hover { background: #ddd; color: #000; text-decoration: none; }
+.method .metl .loseweight  {background: url(../images/loseweight.jpg) no-repeat -100px 0px;
+height: 130px;
+width: 690px;
+padding: 12px 0px 0px 60px;}
+.method .metl .loseweight p { margin-top:6px; line-height:20px;height: 20px;overflow: hidden; }
+.method .metl .loseweight p .name { display:block; float:left; width:45px; background:#000; color:#fff; height:20px; line-height:20px; text-align:center; margin-right:18px; }
+.method .metl .loseweight p .name a { display:block; width:45px; color:#fff; line-height:20px; }
+.method .metl .loseweight p a { margin-right:28px; display: inline-block; }
+.method .metr { width:300px; float:right; margin-top:50px; }
+.method .metr .hd { font-size:24px; font-weight:bold; line-height:30px; height:30px; margin-bottom:14px; }
+.method .metr .tool-item .trigger { background:#333; height:36px; line-height:36px; width:300px; color:#fff; }
+.method .metr .tool-item .trigger span { width:150px; text-align:center; display: inline-block; cursor:pointer; }
+.method .metr .tool-item .trigger span a, .method .metr .tool-item .trigger span a:hover { color:#fff; }
+.method .metr .tool-item .trigger .active { background:#cc3333; }
+.method .metr .tool-item .panle .item { display: none; background:#f6f6f6; height:112px; }
+.method .metr .tool-item .panle .active { display: block; }
+.method .metr .mod_select { margin-right: 15px; padding-top:17px; margin-left:12px; }
+.method .metr .mod_select .select_box { border-bottom: 1px solid #dfdfdf; color: #444; position: relative; cursor: pointer; width: 168px; line-height:38px; height:38px; }
+.method .metr .mod_select .select_txt { display: block; color: #000; width: 140px; line-height: 38px; height: 38px; cursor: text; overflow: hidden; text-align:center; }
+.method .metr .mod_select .selet_open { display: inline-block; position: absolute; background:url(../images/s8.png) no-repeat -538px -138px; right: 0; top: 0; width: 24px; height: 30px; }
+.method .metr .tool-item .mod_select .option { width: 166px; height: auto; background: #fff; overflow: hidden; border: solid 1px #ede7d6; clear: both; position: absolute; top:38px; left: 0; z-index:2; display: none; overflow-x: hidden; overflow-y: auto; height: 288px; }
+.method .metr .tool-item .mod_select .option a { display: block; margin: 0; height: 26px; line-height: 26px; text-align: left; text-indent:35px; background: #fff; overflow: hidden; }
+.method .metr .tool-item .mod_select .option a:hover { background: #ddd; color: #000; text-decoration: none; }
+.method .metr .tool-item .panle .input { width: 138px; text-align: center; overflow: hidden; display:inline; margin-left:12px; height: 42px; line-height:42px; border: none; background: none; outline: none; color: #000; font-size:30px; font-weight:bold; float: left; }
+.search-input .sp2 { float: left; line-height: 42px; height:42px; color: #000; }
+.method .metr .tool-item .search-input { position:relative; z-index:5 }
+.method .metr .tool-item .search-input .btn { background:url(../images/s8.png) no-repeat -70px -178px; width: 79px; height: 79px; display: inline-block; position: absolute; top: 17px; right:21px; line-height: 78px; text-align: center; color: #fff; font-weight: bold; font-size: 24px; }
+.method .metr .tool-item .food-heat .search-input { width:279px; padding:0px 0px 17px 15px; }
+.method .metr .tool-item .food-heat .search-input span { display:block; float:left; width:58px; height:32px; line-height:16px; text-align:center; }
+.method .metr .tool-item .food-heat .search-input .input { background:none; font-size:18px; font-weight:bold; width:185px; text-align:center; outline: none; height:38px; line-height:38px; margin-top:37px; border-bottom:1px solid #c5c5c5; padding-right:20px; }
+.method .metr .tool-item .food-heat .search-input .btn { background:url(../images/s8.png) no-repeat -70px -178px; width:79px; height:79px; display:inline-block; position:absolute; top:17px; right:15px; line-height:78px; text-align:center; color:#fff; font-weight:bold; font-size:24px; }
+.method .metr .app { margin-top:13px; }
+.method .metr .app ul { border-bottom:1px solid #dfdfdf; height:70px; }
+.method .metr .app ul li { float:left; height:70px; width:73px; border-right:1px solid #dfdfdf; }
+.method .metr .app ul li a { height:70px; width:73px; text-align:center; background:#fff; display:inline-block; cursor: pointer;}
+.method .metr .app ul li.last { border-right:none; }
+.method .metr .app ul li a p { line-height:28px; height:28px; overflow:hidden; width:73px; font-size:12px; }
+.method .metr .app ul li a .img1 { background:url(../images/s24.png) no-repeat 0px -6px; width:40px; height:35px; margin:0px auto; }
+.method .metr .app ul li a .img2 { background:url(../images/s24.png) no-repeat -1px -54px; width:40px; height:35px; margin:0px auto; }
+.method .metr .app ul li a .img3 { background:url(../images/s24.png) no-repeat -3px -97px; width:40px; height:35px; margin:0px auto; }
+.method .metr .app ul li a .img4 { background:url(../images/s24.png) no-repeat -1px -141px; width:40px; height:35px; margin:0px auto; }
+.method .metr .app ul li:hover a { background:#c33\9; color:#fff; text-decoration:none; }
+.method .metr .app ul li:hover a .img1 { background:url(../images/s24.png) no-repeat -51px -6px; }
+.method .metr .app ul li:hover a .img2 { background:url(../images/s24.png) no-repeat -52px -54px; }
+.method .metr .app ul li:hover a .img3 { background:url(../images/s24.png) no-repeat -53px -98px; }
+.method .metr .app ul li:hover a .img4 { background:url(../images/s24.png) no-repeat -52px -141px; }
+.method .metr .app ul li:hover a::after {
+height:100%
+}
+/*生活食疗*/
+.diet-test { margin-top:32px; }
+.food-therapy { float:left; width:506px; position:relative; height:300px; }
+.food-therapy .info { position:absolute; top:26px; right:0px; width:224px; height:220px; background:#fff; padding:28px 0px 0px 26px; }
+.food-therapy .info .title a { background:#000; font-size:24px; padding:0px 10px; display:inline-block; font-weight:bold; height:36px; line-height:36px; color:#fff; text-align:center; margin-bottom:10px; }
+.food-therapy .info .title a, .health-test .info .title a { color:#fff; }
+.food-therapy .info .name { font-size:20px; font-weight:bold; height:40px; line-height:40px; overflow:hidden; }
+.food-therapy .info .desc { font-size:12px; line-height:20px; height:40px; overflow:hidden; }
+.food-therapy .info .desc span { color:#c00; }
+.food-therapy .search { position: relative; width:190px; height:30px; line-height:30px; border: 1px solid #000; margin-top:30px; }
+.food-therapy .search .select_box { border: 0; width:65px; float:left; background: #fff; position: relative; cursor: pointer; }
+.food-therapy .select_box .select_txt { height: 22px; line-height: 22px; border-right: 1px solid #959595; width:50px; margin-top:4px; display: block; color: #000; cursor: text; overflow: hidden; padding:0px 4px 0px 8px; }
+.food-therapy .selet_open { display: inline-block; position: absolute; top: 0; width: 24px; height: 24px; left:34px; background: url(../images/s8.png) no-repeat -530px -188px; }
+.food-therapy .option { width:63px; background: #fff; overflow: hidden; border: solid 1px #aaa; clear: both; position: absolute; top:30px; left: -1px; z-index: 2; display: none; }
+.food-therapy .option a { display: block; margin: 0; height:30px; line-height:30px; text-align: left; text-indent: 10px; background: #fff; overflow: hidden; }
+.food-therapy .input { position:absolute; left:65px; top:3px; line-height:24px; border:none; outline:none; width:110px; text-indent:5px; background:none; overflow: hidden; height:24px; }
+.food-therapy .btn { display:inline-block; background:url(../images/s8.png) no-repeat -9px -183px; position:absolute; top:-12px; right:-32px; width:28px; height:40px; padding:15px 10px 0px 12px; color:#fff; font-size:14px; line-height:16px; text-align:center; outline:none; }
+.food-therapy .btn:link, .food-therapy .btn:visited { color:#fff; }
+.health-test { float:left; width:506px; position:relative; height:300px; }
+.health-test .info { position:absolute; top:26px; right:0px; width:224px; height:220px; background:#fff; padding:28px 0px 0px 26px; }
+.health-test .info .title a { background:#000; font-size:24px; font-weight:bold; padding:0px 10px; display:inline-block; height:36px; line-height:36px; color:#fff; text-align:center; margin-bottom:10px; }
+.health-test .info .name { font-size:20px; font-weight:bold; height:48px; line-height:24px; padding:8px 0px; overflow:hidden; }
+.health-test .info .desc { font-size:12px; line-height:20px; height:40px; overflow:hidden;text-indent: 2em; }
+.health-test .info .num-test { margin-top:4px; }
+.health-test .info .num-test .num { float:left; margin-right:18px; width:114px; margin-top:10px; position:relative; }
+.health-test .info .num-test p { font-size:12px; color:#000; text-indent:5px; line-height:20px; }
+.health-test .info .num-test p span { color:#c00 }
+.health-test .info .num-test .line { height: 10px; line-height:0; display:inline; margin-top:4px; font-size:0; width:114px; float:left; background: url(../images/s24.png) no-repeat -406px -189px; }
+.health-test .info .num-test .line .line-cover { position: absolute; width:104px; display: inline; display: block; height: 2px; line-height: 0; font-size: 0; overflow: hidden; left:10px; top:28px; }
+.health-test .info .num-test .line-cover b { display: block; height: 2px; line-height: 0; position: absolute; font-size: 0; background: #c33; overflow: hidden; }
+.health-test .info .num-test .btn { display:inline-block; background:url(../images/s8.png) no-repeat -9px -183px; width:28px; height:40px; padding:10px 10px 0px 12px; color:#fff; font-size:12px; line-height:16px; text-align:center; outline:none; }
+.health-test .info .num-test .btn:link, .health-test .info .num-test .btn:visited { color:#fff }
+.health-baike { margin-top:20px; }
+.health-baike dl { float:left; width:506px;height: 44px;overflow: hidden; }
+.health-baike dl dt { float:left; width:92px; font-size:18px; font-weight:bold; }
+.health-baike dl dd { display:inline-block; width:414px; }
+.health-baike dl dd a { margin-right: 12px; display: inline-block; }
+.m-r68 { margin-right:68px; }
+/*亲子*/
+.md { margin-top: 35px; }
+.baby { margin-top:65px; }
+.md .hd { background:url(../images/tit.png) no-repeat 0px 0px; height:90px; line-height:80px; margin-bottom:10px; font-size:36px; font-weight:bold; text-indent:32px; }
+.md .hd span { float:right; margin-right:32px; display:inline; line-height:60px; }
+.md .hd span a { text-indent:0px; margin: 0 5px; display: inline-block; font-size:14px; font-weight:500; }
+.mcom { margin-left:20px; }
+.coll-item { float: left; width: 300px; margin-right: 72px; }
+.fina { margin-right: 0px; }
+.coll-item .pic { display: block; position: relative; width: 300px; height: 250px; overflow: hidden; }
+.coll-item .pic img { width: 300px; height: 250px; display: block; }
+.coll-item .pic a, .coll-mod .coll-item .pic a:hover { color: #fff; text-decoration: none; }
+.coll-item .pic .pic-cover { position: absolute; width: 300px; bottom: -30px; left: 0; height: 30px; line-height: 30px; text-align: center; font-size: 14px; overflow: hidden; }
+.coll-item .pic .pic-tit, .coll-mod .coll-item .pic .pic-bg { display: block; width: 100%; overflow: hidden; height: 30px; }
+.coll-item .pic .pic-tit { z-index: 20; color: #fff; width: 280px; padding: 0 10px; position: relative; font-family: "microsoft yahei", "\5FAE\8F6F\96C5\9ED1"; }
+.coll-item .pic .pic-bg { background-color: #000; opacity: 0.5; margin-top: -30px; filter: alpha(opacity=50); z-index: 20; }
+.coll-item ul { margin-top: 18px; width: 300px; line-height: 24px; }
+.coll-item ul li { height: 24px; overflow: hidden; padding: 0 10px 0 24px; background:url(../images/s8.png) no-repeat -488px -166px; }
+.special { margin-top:50px; }
+.speitem { border:4px solid #000; width:242px; margin-right:13px; float:left; padding:45px 0px 0px 10px; position:relative; }
+.spe-tit1 { background:url(../images/s8.png) no-repeat -166px -3px; width:145px; height:60px; position:absolute; left:59px; top:-14px; }
+.spe-tit2 { background:url(../images/s8.png) no-repeat -166px -64px; width:145px; height:60px; position:absolute; left:59px; top:-14px; }
+.spe-tit3 { background:url(../images/s8.png) no-repeat -166px -125px; width:145px; height:60px; position:absolute; left:59px; top:-14px; }
+.spe-tit4 { background:url(../images/s8.png) no-repeat -166px -187px; width:145px; height:60px; position:absolute; left:59px; top:-14px; }
+.lastitem { margin-right:0px; }
+.speitem .spelist a { display:inline-block; white-space:nowrap; margin: 0 8px 0 0; line-height:26px; }
+.speitem .spelist { margin:15px 0px;height: 156px;overflow: hidden; }
+/*行业资讯*/
+.links{ margin-top:30px; padding:10px 0px 20px;-webkit-box-shadow: 0 0 5px #e0e0e0;
+-moz-box-shadow: 0 0 5px #e0e0e0;
+box-shadow: 0 0 5px #e0e0e0;
+border: 1px solid #efefef\0;}
+.links .hd{ line-height:40px; height:40px; font-size:20px; text-indent:30px;font-weight: bold;}
+.links .links-txt {margin: 0px 30px ;font-size: 14px;padding-bottom: 0;line-height: 26px; }
+.links .links-txt a{white-space:nowrap; display:inline-block; padding:0px 3px;}
+.market-item { float: left; width: 520px; margin-right: 40px; margin-top:24px; }
+.market-item .pic { width:520px; height:312px; overflow:hidden }
+.market-item .title { line-height:40px; height:40px; width:520px; overflow:hidden; text-indent:25px; font-size:20px; font-weight:bold; margin-top:12px; }
+.fina { margin-right: 0px; }
+.market-item ul { margin-top:8px; width:520px; line-height: 24px; }
+.market-item ul li { height: 24px; overflow: hidden; padding: 0 10px 0 44px; background:url(../images/s8.png) no-repeat -466px -166px; }
+.topbar-wrap { width:100%; border-bottom:2px solid #333; background:#fff; position:fixed; left:0; top:-58px; z-index:999; _position: absolute; _top: expression(documentElement.scrollTop+0+"px");
+_display:none }
+.topbar { width:1080px; margin:0 auto; height:55px }
+.topbar .logo2 { float:left; padding-top:10px; padding-left:20px; }
+.topbar .logo2 a { width:146px; height:36px; display:block; overflow:hidden; text-indent:-9999px; background-image: url(../images/logo146-36.png);
+background-image: -webkit-image-set(url(../images/logo146-36.png) 1x, url(../images/logo292-72.png) 2x); }
+.topbar .nav2 { float:left; position:relative }
+.topbar .nav2 li { float:left; width:70px; overflow:hidden; margin-left:60px; display:inline }
+.topbar .nav2 dl { width:240px; height:55px; overflow:hidden }
+.topbar .nav2 dt { float:left; padding-top:10px }
+.topbar .nav2 dd { float:left; padding-top:8px; display:inline; margin-left:20px; margin-right:-16px; line-height:18px; height:36px; overflow:hidden; width:130px }
+.topbar .nav2 dd a { display:inline-block; height:18px; margin-right:16px }
+.topbar .r { float:right; font-size:0; padding-top:12px }
+.topbar .r a { width:32px; height:31px; float:right; display:inline; margin-left:13px; background-repeat:no-repeat; background-image:url(../images/h.png); cursor:pointer }
+.topbar .r .weibo { background-position:-375px -42px; width:44px; position:relative }
+.topbar .r .weixin { background-position:-441px 0; position:relative; z-index:1 }
+.topbar .r .weibo:hover{background-position:-421px -42px}
+.topbar .r .weixin:hover{background-position:-564px 0}
+.topbar .r .weixin img, .topbar .r .weibo img { position:absolute; top:30px; left:-68px; z-index:9; display:none }
+.backtop{ width:48px; height:48px; overflow:hidden; cursor:pointer; position:fixed; left:50%; margin-left:590px; bottom:50px; _position: absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-50)); display:none}
+.backtop a{ width:48px; height:48px; display:block; background:url(../images/backtop.png) no-repeat 0 0;}
+.backtop a:hover{ background-position:0 bottom}
+
+.missamy{ position:fixed; left:50%; margin-left:560px; bottom:98px; z-index:9999; _position: absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-98));}
+.missamy .slide{ padding:18px 2px 0; background:#fff; border:solid #8a8a8a; border-width:5px 3px;}
+.missamy .panle { width:98px; height:155px; overflow:hidden; position:relative }
+.missamy ul { position:absolute; left:0; top:0; width:10000px }
+.missamy li { float:left; width:98px; overflow:hidden }
+.missamy li img{ display:block}
+.missamy li span{ height: 28px;display:block; font-size:12px; padding:0 5px; line-height:14px; color:#000; text-align:center; margin-top:6px}
+.missamy li a:hover span, .missamy li a:hover{ text-decoration:none; color:#c00}
+.missamy-img{ width:113px; height:113px; background:url(../images/missamy.png) no-repeat 0 0; position:absolute; top:-93px; left:-18px}
+.missamy .close{ width:8px; height:8px; line-height:0; font-size:0; position:absolute; right:0; top:-100px; cursor:pointer; background:url(../images/miss-close.png) no-repeat; }
+.missamy .mnext{ width:25px; height:30px; background:url(../images/s24.png) no-repeat -495px -290px; position:absolute; right:0; top:45px; overflow:hidden; text-indent:-999em; display:none}
+
